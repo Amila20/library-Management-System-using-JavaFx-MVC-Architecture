@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RegEx_Simulator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/com/Ijse/gdse/Lib/RegEx_Simulator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="DashBordContext" opacity="0.78" prefHeight="555.0" prefWidth="987.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Ijse.gdse.Controller.DashBordController">
+   <children>
+      <AnchorPane opacity="0.89" prefHeight="555.0" prefWidth="231.0" style="-fx-background-color: #007;">
+         <children>
+            <Button layoutX="11.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnBooksOnAction" opacity="0.89" prefHeight="45.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: black;" text="Books Management">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="12.0" layoutY="294.0" mnemonicParsing="false" onAction="#btnMemberOnAction" opacity="0.89" prefHeight="45.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: black;" text="Members Management">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="12.0" layoutY="347.0" mnemonicParsing="false" onAction="#btnPublisherOnAction" opacity="0.89" prefHeight="45.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: black;" text="Publishers Management">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="11.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnHomeOnAction" opacity="0.89" prefHeight="45.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: black;" text="HOME">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="70.0" fitWidth="96.0" layoutX="65.0" layoutY="91.0">
+               <image>
+                  <Image url="@../../../../Assets/library-logo-hi.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="27.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome !" wrappingWidth="191.7714606821537">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button layoutX="12.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnIssuesOnAction" opacity="0.89" prefHeight="45.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: black;" text="Issues Books">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="12.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnRetunBooksOnAction" opacity="0.89" prefHeight="45.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: black;" text="Return Books">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="74.0" layoutY="512.0" mnemonicParsing="false" onAction="#btnLogOnAction" prefHeight="24.0" prefWidth="84.0" style="-fx-background-color: black; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="LoadContext" layoutX="237.0" prefHeight="555.0" prefWidth="750.0">
+         <children>
+            <AnchorPane layoutX="377.0" layoutY="144.0" prefHeight="96.0" prefWidth="168.0" style="-fx-background-color: purple;">
+               <children>
+                  <Text fill="WHITE" layoutX="16.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Members" wrappingWidth="125.7714606821537">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblMembers" layoutX="39.0" layoutY="6.0" prefHeight="45.0" prefWidth="73.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="44.0" layoutX="120.0" layoutY="8.0">
+                     <image>
+                        <Image url="@../../../../Assets/png-transparent-computer-icons-symbol-team-members-angle-image-file-formats-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="141.0" prefHeight="96.0" prefWidth="168.0" style="-fx-background-color: #19bdd6;">
+               <children>
+                  <Label fx:id="lblBooks" layoutX="34.0" layoutY="9.0" prefHeight="45.0" prefWidth="63.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="44.0" layoutX="110.0" layoutY="10.0">
+                     <image>
+                        <Image url="@../../../../Assets/kisspng-scythe-don-t-get-caught-book-computer-icons-clip-a-store-shelf-5ab9e4f04332c2.4928392715221322082753.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="25.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Books" wrappingWidth="125.7714606821537">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="193.0" layoutY="141.0" prefHeight="96.0" prefWidth="168.0" style="-fx-background-color: green;">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Publishers" wrappingWidth="125.771484375">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblPublisher" layoutX="39.0" layoutY="11.0" prefHeight="45.0" prefWidth="73.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="44.0" layoutX="117.0" layoutY="6.0">
+                     <image>
+                        <Image url="@../../../../Assets/images.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tblMembers" layoutX="17.0" layoutY="306.0" prefHeight="222.0" prefWidth="704.0">
+               <columns>
+                  <TableColumn fx:id="colMemberId" prefWidth="169.0" text="Member ID" />
+                  <TableColumn fx:id="colMemberName" prefWidth="164.0" text="Member Name" />
+                  <TableColumn fx:id="colmemberAddress" prefWidth="194.0" text="Member Address" />
+                  <TableColumn fx:id="colMemberContac" prefWidth="175.0" text="Member Contac" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="562.0" layoutY="144.0" prefHeight="96.0" prefWidth="168.0" style="-fx-background-color: orange;">
+               <children>
+                  <Text fill="WHITE" layoutX="11.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Books" wrappingWidth="148.0000023841858">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblAvailbleMembers" layoutX="39.0" layoutY="6.0" prefHeight="45.0" prefWidth="73.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="44.0" layoutX="120.0" layoutY="8.0">
+                     <image>
+                        <Image url="@../../../../Assets/png-transparent-computer-icons-symbol-team-members-angle-image-file-formats-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="lblDate" layoutX="52.0" layoutY="265.0" prefHeight="26.0" prefWidth="126.0" text="Label">
+               <font>
+                  <Font name="Bodoni MT Black" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="133.0" fitWidth="758.0" layoutX="-7.0">
+               <image>
+                  <Image url="@../../../../Assets/Capture.JPG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
